@@ -1,0 +1,13 @@
+account_id,account_code,account_name,account_type,normal_balance
+1,1001,Cash,Asset,Debit
+2,1002,Accounts Receivable,Asset,Debit
+3,1003,Office Equipment,Asset,Debit
+4,2001,Accounts Payable,Liability,Credit
+5,2002,Bank Loan,Liability,Credit
+6,3001,Owner Equity,Equity,Credit
+7,4001,Sales Revenue,Revenue,Credit
+8,4002,Service Revenue,Revenue,Credit
+9,5001,Salaries Expense,Expense,Debit
+10,5002,Rent Expense,Expense,Debit
+11,5003,Software Expense,Expense,Debit
+12,5004,Marketing Expense,Expense,Debit

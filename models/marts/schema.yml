@@ -1,0 +1,53 @@
+version: 2
+
+models:
+  - name: dim_accounts
+    columns:
+      - name: account_id
+        tests:
+          - unique
+          - not_null
+      - name: account_type
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Asset', 'Liability', 'Equity', 'Revenue', 'Expense']
+
+  - name: dim_departments
+    columns:
+      - name: department_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_fiscal_periods
+    columns:
+      - name: period_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_journal_lines
+    columns:
+      - name: line_id
+        tests:
+          - unique
+          - not_null
+      - name: account_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_accounts')
+              field: account_id
+      - name: department_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_departments')
+              field: department_id
+      - name: period_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_fiscal_periods')
+              field: period_id

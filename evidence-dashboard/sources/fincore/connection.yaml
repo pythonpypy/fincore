@@ -1,0 +1,4 @@
+name: fincore
+type: duckdb
+options:
+  filename: ../../../fincore.duckdb

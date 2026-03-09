@@ -1,0 +1,8 @@
+venv/
+logs/
+target/
+dbt_packages/
+*.duckdb
+.env
+evidence-dashboard/.evidence/
+evidence-dashboard/node_modules/
