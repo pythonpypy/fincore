@@ -2,10 +2,14 @@
 
 A finance and accounting data project built with dbt, DuckDB, and Evidence.dev.
 
-## What this project does
-
 Simulates 3 years of company financial data (2023 to 2025) using double-entry bookkeeping,
 models it into a star schema using dbt, and visualises it in an Evidence.dev dashboard.
+
+## Dashboard
+
+![Home Dashboard](screenshots/dashboard_home.png)
+
+![Department Spending](screenshots/dashboard_departments.png)
 
 ## Tech stack
 
